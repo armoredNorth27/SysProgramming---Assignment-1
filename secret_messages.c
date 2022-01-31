@@ -10,6 +10,27 @@ void encrypt_message();
 //Decrypts a string using a secret key
 void decrypt_message();
 
+int main(){
+
+    char choice;
+    
+    //Get choice to decrypt or encrypt
+    printf("What would you like to do? (Enter E for encrypt or D for decrypt): ");
+    scanf("%c", &choice);
+    getchar();
+
+    if(tolower(choice) == 'e'){
+        encrypt_message();
+    }
+    else if(tolower(choice) == 'd'){
+        decrypt_message();
+    }
+    else{
+        printf("That's not one of the choices!\n");
+    }
+
+    return 0;
+}
 
 void encrypt_message(){
 
@@ -117,26 +138,4 @@ void decrypt_message(){
     printf("%s\n", decryptInput);
 
     return;
-}
-
-int main(){
-
-    char choice;
-    
-    //Get choice to decrypt or encrypt
-    printf("What would you like to do? (Enter E for encrypt or D for decrypt): ");
-    scanf("%c", &choice);
-    getchar();
-
-    if(tolower(choice) == 'e'){
-        encrypt_message();
-    }
-    else if(tolower(choice) == 'd'){
-        decrypt_message();
-    }
-    else{
-        printf("That's not one of the choices!\n");
-    }
-
-    return 0;
 }
