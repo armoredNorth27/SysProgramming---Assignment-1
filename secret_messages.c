@@ -1,12 +1,9 @@
 //Author: Alexander Nedev, 101195595
-//Version: 0.1
-//Insert purpose here later
-//explain use here later
+//Version: 1.0
 
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-//Main Program 2.1
 
 //Encrypts a string using an encryption key
 void encrypt_message();
